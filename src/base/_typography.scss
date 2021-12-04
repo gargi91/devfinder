@@ -1,0 +1,83 @@
+.heading--1 {
+	font-family: var(--font-display);
+	font-size: 3rem;
+}
+
+// utility class for font size
+
+.fs-lg {
+	font-size: 2.6rem;
+}
+
+.fs-md {
+	font-size: 1.6rem;
+}
+
+.fs-sm {
+	font-size: 1.4rem;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+// utility class for margin bottom
+
+.mb-sm {
+	margin-bottom: 2rem;
+}
+
+.mb-md {
+	margin-bottom: 3rem;
+}
+
+// utility class for font color
+.fc-blue {
+	color: var(--color-blue);
+}
+
+.fc-grey {
+	color: var(--color-grey);
+}
+
+.fc-white {
+	color: #fff;
+}
+
+.fc-dark {
+	color: #1f213a;
+}
+
+// svg icon colors
+.svg-white {
+	fill: var(--color-light-2);
+}
+
+.svg-grey {
+	fill: var(--color-grey);
+}
+
+.svg-blue {
+	fill: var(--color-blue);
+}
+
+.svg-dark {
+	fill: #1f213a;
+}
+
+.svg {
+	width: 2.2rem;
+	height: 2.2rem;
+	margin-right: 1rem;
+}
+
+.error {
+	font-size: 3rem;
+	text-align: center;
+	align-self: center;
+	font-weight: 700;
+	color: var(--color-grey);
+
+	grid-column: 1/-1;
+	grid-row: 1/-1;
+}

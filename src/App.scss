@@ -1,0 +1,33 @@
+@import "./base/variables";
+
+.app {
+	min-height: 100vh;
+	background-color: var(--color-base-2);
+	padding: 10vh 20%;
+	display: flex;
+	flex-direction: column;
+
+	@media only screen and (max-width: $bp-medium) {
+		padding: 8vh 10%;
+	}
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&__mode {
+		display: flex;
+		align-items: center;
+		padding: 0.5rem;
+		cursor: pointer;
+		background-color: transparent;
+		border: none;
+		outline: none;
+
+		span {
+			margin-right: 0.5rem;
+			font-family: var(--font-display);
+		}
+	}
+}
