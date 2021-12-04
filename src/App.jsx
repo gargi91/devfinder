@@ -15,15 +15,14 @@ function App() {
 	const [loading, setLoading] = useState(true);
 	const [theme, setTheme] = useState("dark");
 
-	const changeTheme = () => {
-		if (theme === "dark") {
-			document.documentElement.className = "dark-theme";
-		} else {
-			document.documentElement.className = "light-theme";
-		}
-	};
-
 	useEffect(() => {
+		const changeTheme = () => {
+			if (theme === "dark") {
+				document.documentElement.className = "dark-theme";
+			} else {
+				document.documentElement.className = "light-theme";
+			}
+		};
 		changeTheme();
 	}, [theme]);
 
