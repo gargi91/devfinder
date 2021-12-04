@@ -32,11 +32,11 @@ function App() {
 			try {
 				setLoading(true);
 				const response = await fetch(`${url}${query}`);
-				setLoading(false);
 				if (!response.ok) {
 					throw new Error("No user found");
 				}
 				const data = await response.json();
+				setLoading(false);
 
 				const dt = new Date(data.created_at);
 				const months = [
