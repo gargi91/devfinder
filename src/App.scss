@@ -10,6 +10,10 @@
 	@media only screen and (max-width: $bp-medium) {
 		padding: 8vh 10%;
 	}
+
+	@media only screen and (max-width: $bp-small) {
+		min-height: 80vh;
+	}
 }
 
 .header {
